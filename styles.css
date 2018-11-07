@@ -3,10 +3,11 @@ th {
 }
 input {
     width: 150px;
+ 
 
 }
 input[type=text] {
-   
+    
    /* background-color: rgb(236, 235, 235);*/
 
 }
