@@ -3,47 +3,6 @@ body {
     font-size: 0.75em;
 }
 
-table,th,td {
-    padding: 0.5em;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-table {
-    border-width: 2px;
-}
-th {
-    text-align: left;
-}
-
-td:nth-child(even) {
-    background-color: gray;
-}
-
-td:nth-child(even).headField{
-    background-color: lightgrey;
-}
-
-input {
-    width: 100px;
-    border:none;
-    background-color: inherit;
-}
-button{
-    margin-top:1em;
-}
-
-
-.head {
-    background-color: gray;
-    font-weight: 700;
-    border-width: 2px;
-}
-
-.headField {
-    background-color: lightgrey;
-    border-width: 2px;
-}
-
 #profilepic {
     width: 220px;
 }
