@@ -3,17 +3,16 @@ body {
     font-size: 0.75em;
 }
 
-th {
-    text-align: left;
-}
 table,th,td {
     padding: 0.5em;
     border: 1px solid black;
     border-collapse: collapse;
 }
-
 table {
     border-width: 2px;
+}
+th {
+    text-align: left;
 }
 
 td:nth-child(even) {
