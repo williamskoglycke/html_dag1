@@ -1,23 +1,40 @@
 th {
     text-align: left;
 }
-input {
-    width: 150px;
- 
-
+table,th,td {
+    padding:1em;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
-input[type=text] {
-    
-   /* background-color: rgb(236, 235, 235);*/
 
+td:nth-child(even) {
+    background-color: gray;
+}
+
+td:nth-child(even).headField{
+    background-color: lightgrey;
+}
+
+
+
+input {
+    width: 100px;
+    border:none;
+    background-color: inherit;
+}
+
+
+.head {
+    background-color: gray;
+    font-weight: 700;
+}
+
+.headField {
+    background-color: lightgrey;
 }
 
 #profilepic {
     width: 220px;
-}
-
-body {
-
 }
 
 i{
