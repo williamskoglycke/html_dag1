@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+}
+
+th {
+    text-align: left;
+}
+table,th,td {
+    padding: 0.5em;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    border-width: 2px;
+}
+
+td:nth-child(even) {
+    background-color: gray;
+}
+
+td:nth-child(even).headField{
+    background-color: lightgrey;
+}
+
+input {
+    width: 100px;
+    border:none;
+    background-color: inherit;
+}
+
+td:hover, th:hover, td:nth-child(even).headField:hover {
+    background-color: aqua;
+    transition-property: background-color;
+    transition-delay: 0;
+    transition-duration: 1s;
+    transition-timing-function: infinite; 
+}
+
+button{
+    margin-top:1em;
+}
+
+
+.head {
+    background-color: gray;
+    font-weight: 700;
+    border-width: 2px;
+}
+
+.headField {
+    background-color: lightgrey;
+    border-width: 2px;
+}
+
+#profilepic {
+    width: 220px;
+}
+
+.diceArea{
+    i {
+        color: black;
+    }
+}
+
+.diceArea{
+    i:hover{
+        animation-name:spin;
+        animation-direction: alternate;
+        animation-duration:3s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+i{
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 40px;
+    color: rgb(6, 94, 79);
+}

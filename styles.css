@@ -16,11 +16,28 @@ h2 {
 body {
   margin-left: 2em; }
 
+input.field:focus {
+  font-size: 1.5em;
+  width: 75%;
+  transition-duration: infinite;
+  transition-property: font-size background-color width;
+  background-color: #cccccc; }
+
 .loggain {
-  border: 3px solid green;
+  animation-duration: 5s;
+  animation-name: slidein;
+  border: 3px solid steelblue;
   width: 15em;
   border-radius: 20px;
   padding: 5px; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    border-color: rebeccapurple; }
+  to {
+    margin-left: 0%;
+    border-color: steelblue; } }
 
 #profilepic {
   width: 200px; }
@@ -28,3 +45,28 @@ body {
 .knapp {
   margin: 10px 5px;
   display: block; }
+
+i {
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 40px;
+  color: #065e4f;
+  animation: rotate 2s infinite; }
+
+a {
+  animation-name: fontpulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  color: black; }
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(360deg); } }
+
+@keyframes fontpulse {
+  0%, 100% {
+    font-size: 1em; }
+  50% {
+    font-size: 1.2em; } }
