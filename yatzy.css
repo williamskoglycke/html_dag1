@@ -46,23 +46,40 @@ button {
 #profilepic {
   width: 220px; }
 
-.diceArea i {
-  color: black; }
+.diceArea {
+  width: 100%;
+  height: 50%;
+  border: 1px solid black; }
+  .diceArea i {
+    color: black; }
 
-.diceArea i:hover {
-  animation-name: spin;
-  animation-direction: alternate;
-  animation-duration: 1s;
-  animation-iteration-count: infinite; }
+.calculateButton button {
+  margin-bottom: 1em; }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transfrom: rotate(360deg); } }
+.playerArea {
+  width: 100%;
+  height: 50%;
+  border: 1px solid black; }
 
-i {
+.fa-arrow-left {
   padding-left: 10px;
   padding-top: 20px;
   font-size: 40px;
   color: #065e4f; }
+
+.diceArea {
+  font-size: 4em;
+  padding: 1em; }
+  .diceArea i:hover {
+    animation-name: spin;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
+  .diceArea i {
+    margin: 0.2em; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

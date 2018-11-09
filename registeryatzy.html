@@ -6,157 +6,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nytt spel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="yatzy.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="yatzy.css" />
     <script src="main.js"></script>
 </head>
 
 <body>
-    <h1>Registrera ditt spel</h1>
-    
-    <form autocomplete="off">
-        <table>
-            <tr>
-                <th class="head">Slag</th>
-                <th class="headField"><input type="text" name="name1" id="name1" placeholder="Namn 1"></th>
-                <th class="headField"><input type="text" name="name2" id="name2" placeholder="Namn 2"></th>
-                <th class="headField"><input type="text" name="name3" id="name3" placeholder="Namn 3"></th>
-                <th class="headField"><input type="text" name="name4" id="name4" placeholder="Namn 4"></th>
-            </tr>
-            <tr>
-                <td>Ettor</td>
-                <td><input type="number" name="ones" id="ones" min="0" max="5" step="1"></td>
-                <td><input type="number" name="ones" id="ones" min="0" max="5" step="1"></td>
-                <td><input type="number" name="ones" id="ones" min="0" max="5" step="1"></td>
-                <td><input type="number" name="ones" id="ones" min="0" max="5" step="1"></td>
-            </tr>
-            <tr>
-                <td>Tvåor</td>
-                <td><input type="number" name="twos" id="twos" min="0" max="10" step="2"></td>
-                <td><input type="number" name="twos" id="twos" min="0" max="10" step="2"></td>
-                <td><input type="number" name="twos" id="twos" min="0" max="10" step="2"></td>
-                <td><input type="number" name="twos" id="twos" min="0" max="10" step="2"></td>
-            </tr>
-            <tr>
-                <td>Treor</td>
-                <td><input type="number" name="threes" id="" min="0" max="15" step="3"></td>
-                <td><input type="number" name="threes" id="" min="0" max="15" step="3"></td>
-                <td><input type="number" name="" id="" min="0" max="15" step="3"></td>
-                <td><input type="number" name="" id="" min="0" max="15" step="3"></td>
-            </tr>
-            <tr>
-                <td>Fyror</td>
-                <td><input type="number" name="" id="" min="0" max="20" step="4"></td>
-                <td><input type="number" name="" id="" min="0" max="20" step="4"></td>
-                <td><input type="number" name="" id="" min="0" max="20" step="4"></td>
-                <td><input type="number" name="" id="" min="0" max="20" step="4"></td>
-            </tr>
-            <tr>
-                <td>Femmor</td>
-                <td><input type="number" name="" id="" min="0" max="25" step="5"></td>
-                <td><input type="number" name="" id="" min="0" max="25" step="5"></td>
-                <td><input type="number" name="" id="" min="0" max="25" step="5"></td>
-                <td><input type="number" name="" id="" min="0" max="25" step="5"></td>
-            </tr>
-            <tr>
-                <td>Sexor</td>
-                <td><input type="number" name="" id="" min="0" max="30" step="6"></td>
-                <td><input type="number" name="" id="" min="0" max="30" step="6"></td>
-                <td><input type="number" name="" id="" min="0" max="30" step="6"></td>
-                <td><input type="number" name="" id="" min="0" max="30" step="6"></td>
-            </tr>
-            <tr>
-                <td class="head">Summa</td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="105" step="1"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="105" step="1"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="105" step="1"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="105" step="1"></td>
-            </tr>
-            <tr>
-                <td class="head">Bonus (50)</td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="50" step="50"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="50" step="50"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="50" step="50"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="50" step="50"></td>
-            </tr>
-            <tr>
-                <td>Par</td>
-                <td><input type="number" name="" id="" min="0" max="12" step="2"></td>
-                <td><input type="number" name="" id="" min="0" max="12" step="2"></td>
-                <td><input type="number" name="" id="" min="0" max="12" step="2"></td>
-                <td><input type="number" name="" id="" min="0" max="12" step="2"></td>
-            </tr>
-            <tr>
-                <td>Två par</td>
-                <td><input type="number" name="" id="" min="0" max="22" step="2"></td>
-                <td><input type="number" name="" id="" min="0" max="22" step="2"></td>
-                <td><input type="number" name="" id="" min="0" max="22" step="2"></td>
-                <td><input type="number" name="" id="" min="0" max="22" step="2"></td>
-            </tr>
-            <tr>
-                <td>Tretal</td>
-                <td><input type="number" name="" id="" min="0" max="18" step="3"></td>
-                <td><input type="number" name="" id="" min="0" max="18" step="3"></td>
-                <td><input type="number" name="" id="" min="0" max="18" step="3"></td>
-                <td><input type="number" name="" id="" min="0" max="18" step="3"></td>
-            </tr>
-            <tr>
-                <td>Fyrtal</td>
-                <td><input type="number" name="" id="" min="0" max="24" step="4"></td>
-                <td><input type="number" name="" id="" min="0" max="24" step="4"></td>
-                <td><input type="number" name="" id="" min="0" max="24" step="4"></td>
-                <td><input type="number" name="" id="" min="0" max="24" step="4"></td>
-            </tr>
-            <tr>
-                <td>Kåk</td>
-                <td><input type="number" name="" id="" min="0" max="28" step="1"></td>
-                <td><input type="number" name="" id="" min="0" max="28" step="1"></td>
-                <td><input type="number" name="" id="" min="0" max="28" step="1"></td>
-                <td><input type="number" name="" id="" min="0" max="28" step="1"></td>
-            </tr>
-            <tr>
-                <td>Liten stege</td>
-                <td><input type="number" name="" id="" min="0" max="15" step="15"></td>
-                <td><input type="number" name="" id="" min="0" max="15" step="15"></td>
-                <td><input type="number" name="" id="" min="0" max="15" step="15"></td>
-                <td><input type="number" name="" id="" min="0" max="15" step="15"></td>
-            </tr>
-            <tr>
-                <td>Stor stege</td>
-                <td><input type="number" name="" id="" min="0" max="20" step="20"></td>
-                <td><input type="number" name="" id="" min="0" max="20" step="20"></td>
-                <td><input type="number" name="" id="" min="0" max="20" step="20"></td>
-                <td><input type="number" name="" id="" min="0" max="20" step="20"></td>
-            </tr>
-            <tr>
-                <td>Chans</td>
-                <td><input type="number" name="" id="" min="0" max="30" step="1"></td>
-                <td><input type="number" name="" id="" min="0" max="30" step="1"></td>
-                <td><input type="number" name="" id="" min="0" max="30" step="1"></td>
-                <td><input type="number" name="" id="" min="0" max="30" step="1"></td>
-            </tr>
-            <tr>
-                <td>Yatzy (50)</td>
-                <td><input type="number" name="" id="" min="0" max="50" step="5"></td>
-                <td><input type="number" name="" id="" min="0" max="50" step="5"></td>
-                <td><input type="number" name="" id="" min="0" max="50" step="5"></td>
-                <td><input type="number" name="" id="" min="0" max="50" step="5"></td>
-            </tr>
-            <tr>
-                <td class="head">Resultat</td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="374" step="1"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="374" step="1"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="374" step="1"></td>
-                <td class="headField"><input type="number" name="" id="" min="0" max="374" step="1"></td>
-            </tr>
 
-        </table>
-        <button type="submit">Spara spel</button>
-    </form>
-    <div class="diceArea"><i class="fas fa-dice-six"></i><i class="fas fa-dice-one"></i></div>
-    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Yatzy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
 
+    <div class="container">
+
+        <div class="calculateButton">
+            <button type="button" class="btn btn-info">Beräkna</button>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 yatzyTable">
+                <form autocomplete="off">
+                    <table>
+                        <tr>
+                            <th class="head">Slag</th>
+                            <th class="headField"><input type="text" name="name1" id="name1" placeholder="Namn 1"></th>
+                            <th class="headField"><input type="text" name="name2" id="name2" placeholder="Namn 2"></th>
+                            <th class="headField"><input type="text" name="name3" id="name3" placeholder="Namn 3"></th>
+                            <th class="headField"><input type="text" name="name4" id="name4" placeholder="Namn 4"></th>
+                        </tr>
+                        <tr>
+                            <td>Ettor</td>
+                            <td><input type="number" name="ones" id="ones" min="0" max="5" step="1"></td>
+                            <td><input type="number" name="ones" id="ones" min="0" max="5" step="1"></td>
+                            <td><input type="number" name="ones" id="ones" min="0" max="5" step="1"></td>
+                            <td><input type="number" name="ones" id="ones" min="0" max="5" step="1"></td>
+                        </tr>
+                        <tr>
+                            <td>Tvåor</td>
+                            <td><input type="number" name="twos" id="twos" min="0" max="10" step="2"></td>
+                            <td><input type="number" name="twos" id="twos" min="0" max="10" step="2"></td>
+                            <td><input type="number" name="twos" id="twos" min="0" max="10" step="2"></td>
+                            <td><input type="number" name="twos" id="twos" min="0" max="10" step="2"></td>
+                        </tr>
+                        <tr>
+                            <td>Treor</td>
+                            <td><input type="number" name="threes" id="" min="0" max="15" step="3"></td>
+                            <td><input type="number" name="threes" id="" min="0" max="15" step="3"></td>
+                            <td><input type="number" name="" id="" min="0" max="15" step="3"></td>
+                            <td><input type="number" name="" id="" min="0" max="15" step="3"></td>
+                        </tr>
+                        <tr>
+                            <td>Fyror</td>
+                            <td><input type="number" name="" id="" min="0" max="20" step="4"></td>
+                            <td><input type="number" name="" id="" min="0" max="20" step="4"></td>
+                            <td><input type="number" name="" id="" min="0" max="20" step="4"></td>
+                            <td><input type="number" name="" id="" min="0" max="20" step="4"></td>
+                        </tr>
+                        <tr>
+                            <td>Femmor</td>
+                            <td><input type="number" name="" id="" min="0" max="25" step="5"></td>
+                            <td><input type="number" name="" id="" min="0" max="25" step="5"></td>
+                            <td><input type="number" name="" id="" min="0" max="25" step="5"></td>
+                            <td><input type="number" name="" id="" min="0" max="25" step="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Sexor</td>
+                            <td><input type="number" name="" id="" min="0" max="30" step="6"></td>
+                            <td><input type="number" name="" id="" min="0" max="30" step="6"></td>
+                            <td><input type="number" name="" id="" min="0" max="30" step="6"></td>
+                            <td><input type="number" name="" id="" min="0" max="30" step="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="head">Summa</td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="105" step="1"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="105" step="1"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="105" step="1"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="105" step="1"></td>
+                        </tr>
+                        <tr>
+                            <td class="head">Bonus (50)</td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="50" step="50"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="50" step="50"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="50" step="50"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="50" step="50"></td>
+                        </tr>
+                        <tr>
+                            <td>Par</td>
+                            <td><input type="number" name="" id="" min="0" max="12" step="2"></td>
+                            <td><input type="number" name="" id="" min="0" max="12" step="2"></td>
+                            <td><input type="number" name="" id="" min="0" max="12" step="2"></td>
+                            <td><input type="number" name="" id="" min="0" max="12" step="2"></td>
+                        </tr>
+                        <tr>
+                            <td>Två par</td>
+                            <td><input type="number" name="" id="" min="0" max="22" step="2"></td>
+                            <td><input type="number" name="" id="" min="0" max="22" step="2"></td>
+                            <td><input type="number" name="" id="" min="0" max="22" step="2"></td>
+                            <td><input type="number" name="" id="" min="0" max="22" step="2"></td>
+                        </tr>
+                        <tr>
+                            <td>Tretal</td>
+                            <td><input type="number" name="" id="" min="0" max="18" step="3"></td>
+                            <td><input type="number" name="" id="" min="0" max="18" step="3"></td>
+                            <td><input type="number" name="" id="" min="0" max="18" step="3"></td>
+                            <td><input type="number" name="" id="" min="0" max="18" step="3"></td>
+                        </tr>
+                        <tr>
+                            <td>Fyrtal</td>
+                            <td><input type="number" name="" id="" min="0" max="24" step="4"></td>
+                            <td><input type="number" name="" id="" min="0" max="24" step="4"></td>
+                            <td><input type="number" name="" id="" min="0" max="24" step="4"></td>
+                            <td><input type="number" name="" id="" min="0" max="24" step="4"></td>
+                        </tr>
+                        <tr>
+                            <td>Kåk</td>
+                            <td><input type="number" name="" id="" min="0" max="28" step="1"></td>
+                            <td><input type="number" name="" id="" min="0" max="28" step="1"></td>
+                            <td><input type="number" name="" id="" min="0" max="28" step="1"></td>
+                            <td><input type="number" name="" id="" min="0" max="28" step="1"></td>
+                        </tr>
+                        <tr>
+                            <td>Liten stege</td>
+                            <td><input type="number" name="" id="" min="0" max="15" step="15"></td>
+                            <td><input type="number" name="" id="" min="0" max="15" step="15"></td>
+                            <td><input type="number" name="" id="" min="0" max="15" step="15"></td>
+                            <td><input type="number" name="" id="" min="0" max="15" step="15"></td>
+                        </tr>
+                        <tr>
+                            <td>Stor stege</td>
+                            <td><input type="number" name="" id="" min="0" max="20" step="20"></td>
+                            <td><input type="number" name="" id="" min="0" max="20" step="20"></td>
+                            <td><input type="number" name="" id="" min="0" max="20" step="20"></td>
+                            <td><input type="number" name="" id="" min="0" max="20" step="20"></td>
+                        </tr>
+                        <tr>
+                            <td>Chans</td>
+                            <td><input type="number" name="" id="" min="0" max="30" step="1"></td>
+                            <td><input type="number" name="" id="" min="0" max="30" step="1"></td>
+                            <td><input type="number" name="" id="" min="0" max="30" step="1"></td>
+                            <td><input type="number" name="" id="" min="0" max="30" step="1"></td>
+                        </tr>
+                        <tr>
+                            <td>Yatzy (50)</td>
+                            <td><input type="number" name="" id="" min="0" max="50" step="5"></td>
+                            <td><input type="number" name="" id="" min="0" max="50" step="5"></td>
+                            <td><input type="number" name="" id="" min="0" max="50" step="5"></td>
+                            <td><input type="number" name="" id="" min="0" max="50" step="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="head">Resultat</td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="374" step="1"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="374" step="1"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="374" step="1"></td>
+                            <td class="headField"><input type="number" name="" id="" min="0" max="374" step="1"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col">
+                <div class="row-lg-6 diceArea">
+                    <i class="fas fa-dice-six"></i>
+                    <i class="fas fa-dice-one"></i>
+                    <i class="fas fa-dice-two"></i>
+                    <i class="fas fa-dice-three"></i>
+                    <i class="fas fa-dice-four"></i>
+                    <i class="fas fa-dice-five"></i>
+                </div>
+                <div class="row-lg-6 playerArea">ngt content</div>
+            </div>
+        </div>
+
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
