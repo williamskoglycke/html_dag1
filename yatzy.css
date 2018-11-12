@@ -2,64 +2,50 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75em; }
 
-th {
-  text-align: left; }
-
 table, th, td {
-  padding: 0.5em;
+  padding: 0.3em;
   border: 1px solid black;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  text-align: left;
+  font-weight: bold; }
 
-table {
+table, .row1 th, .row8 td, .row9 td, .row19 td {
   border-width: 2px; }
 
-td:nth-child(even) {
-  background-color: gray; }
+.col1 {
+  column-width: 100px; }
 
-td:nth-child(even).headField {
-  background-color: lightgrey; }
+.row1, .row1 .col2, .row1 .col4,
+.row8, .row8 .col2, .row8 .col4,
+.row9, .row9 .col2, .row9 .col4,
+.row19, .row19 .col2, .row19 .col4 {
+  background-color: #d2d2d2; }
 
+.col2, .col4 {
+  background-color: #b4b4b4; }
+
+.row1 .col1, .row8 .col1, .row9 .col1, .row19 .col1 {
+  background-color: #969696; }
+
+th.col3:active, td.col3:active {
+  background-color: #82C9BC;
+  border: 2px solid #065e4f; }
+
+/*
+td.col2:hover, td.col3:hover, td.col4:hover, td.col5:hover, th.col2:hover, th.col3:hover,th.col4:hover,th.col5:hover{
+    background-color: aquamarine;
+    transition-property: background-color;
+}*/
 input {
-  width: 100px;
+  width: 60px;
   border: none;
   background-color: inherit; }
-
-td:hover, th:hover, td:nth-child(even).headField:hover {
-  background-color: aqua;
-  transition-property: background-color;
-  transition-delay: 0;
-  transition-duration: 1s;
-  transition-timing-function: infinite; }
 
 button {
   margin-top: 1em; }
 
-.head {
-  background-color: gray;
-  font-weight: 700;
-  border-width: 2px; }
-
-.headField {
-  background-color: lightgrey;
-  border-width: 2px; }
-
-#profilepic {
-  width: 220px; }
-
-.diceArea {
-  width: 100%;
-  height: 50%;
-  border: 1px solid black; }
-  .diceArea i {
-    color: black; }
-
 .calculateButton button {
   margin-bottom: 1em; }
-
-.playerArea {
-  width: 100%;
-  height: 50%;
-  border: 1px solid black; }
 
 .fa-arrow-left {
   padding-left: 10px;
@@ -68,18 +54,36 @@ button {
   color: #065e4f; }
 
 .diceArea {
-  font-size: 4em;
-  padding: 1em; }
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border: 1px solid black; }
+  .diceArea i {
+    color: black;
+    margin: 0.2em;
+    font-size: 4em; }
   .diceArea i:hover {
     animation-name: spin;
     animation-direction: alternate;
     animation-duration: 3s;
     animation-iteration-count: infinite; }
-  .diceArea i {
-    margin: 0.2em; }
+  .diceArea .dice {
+    display: inline-block;
+    vertical-align: top; }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.playerArea {
+  border: 1px solid black; }
+  .playerArea .card-title {
+    color: #065e4f;
+    font-size: 1.2em; }
+  .playerArea .card img {
+    max-width: 50px; }
+  .playerArea .card-body {
+    padding: 1em; }
+  .playerArea .player2 {
+    box-shadow: 0 0 20px #065e4f; }

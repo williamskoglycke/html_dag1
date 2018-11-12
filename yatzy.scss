@@ -3,89 +3,59 @@ body {
     font-size: 0.75em;
 }
 
-th {
-    text-align: left;
-}
 table,th,td {
-    padding: 0.5em;
+    padding: 0.3em;
     border: 1px solid black;
     border-collapse: collapse;
+    text-align: left;
+    font-weight: bold;
 }
-
-table {
+table,.row1 th,.row8 td,.row9 td,.row19 td{
     border-width: 2px;
 }
-
-td:nth-child(even) {
-    background-color: gray;
+.col1{
+    column-width: 100px;
+}
+.row1, .row1 .col2, .row1 .col4, 
+.row8, .row8 .col2, .row8 .col4,
+.row9, .row9 .col2, .row9 .col4,
+.row19, .row19 .col2, .row19 .col4{
+    background-color: rgb(210,210,210);
+}
+.col2, .col4{
+    background-color: rgb(180,180,180);
+}
+.row1, .row8, .row9, .row19{
+    .col1{
+    background-color: rgb(150,150,150);
+    }
 }
 
-td:nth-child(even).headField{
-    background-color: lightgrey;
+th.col3:active, td.col3:active{
+    background-color: #82C9BC;
+    border: 2px solid rgb(6, 94, 79);
+
 }
+/*
+td.col2:hover, td.col3:hover, td.col4:hover, td.col5:hover, th.col2:hover, th.col3:hover,th.col4:hover,th.col5:hover{
+    background-color: aquamarine;
+    transition-property: background-color;
+}*/
 
 input {
-    width: 100px;
+    width: 60px;
     border:none;
     background-color: inherit;
-}
-
-td:hover, th:hover, td:nth-child(even).headField:hover {
-    background-color: aqua;
-    transition-property: background-color;
-    transition-delay: 0;
-    transition-duration: 1s;
-    transition-timing-function: infinite; 
 }
 
 button{
     margin-top:1em;
 }
-
-
-.head {
-    background-color: gray;
-    font-weight: 700;
-    border-width: 2px;
-}
-
-.headField {
-    background-color: lightgrey;
-    border-width: 2px;
-}
-
-#profilepic {
-    width: 220px;
-}
-
-.diceArea{
-    i {
-        color: black;
-    }
-    width: 100%;
-    height: 50%;
-    border: 1px solid black;
-}
-
 .calculateButton {
     button {
         margin-bottom: 1em;
     }
 }
-
-.diceArea{
-    
-}
-
-
-
-.playerArea {
-    width: 100%;
-    height: 50%;
-    border: 1px solid black;
-}
-
-
 .fa-arrow-left{
         padding-left: 10px;
         padding-top: 20px;
@@ -93,21 +63,28 @@ button{
         color: rgb(6, 94, 79);
 }
 
+
 .diceArea{
-    i:hover{
+    padding:1.5em;
+    margin-bottom: 1.5em;
+    border: 1px solid black;
+
+    i {
+        color:black;
+        margin: 0.2em;
+        font-size: 4em;
+    }
+    i:hover {
         animation-name:spin;
         animation-direction: alternate;
         animation-duration:3s;
         animation-iteration-count: infinite;
     }
-    font-size: 4em;
-    padding: 1em;
-    i{
-        margin: 0.2em;
+    .dice{
+        display:inline-block;
+        vertical-align: top;
     }
 }
-
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -115,4 +92,22 @@ button{
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+.playerArea {
+    border: 1px solid black;
+    .card-title{
+        color:rgb(6, 94, 79);
+        font-size:1.2em;
+    }
+    .card img{
+    max-width: 50px;
+    }
+    .card-body{
+    padding: 1em;
+   }
+   .player2{
+       box-shadow: 0 0 20px rgb(6, 94, 79);
+   }
 }
