@@ -10,7 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="yatzy.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="yatzy.css">
     <script src="main.js"></script>
 </head>
 
@@ -39,9 +39,10 @@
             <button type="button" class="btn btn-info">Beräkna</button>
         </div>
 
-    <div class="row">
-            
-        <div class="col-lg-6 yatzyTable">
+        <div class="row">
+
+            <div class="col-lg-6 yatzyTable">
+
                 <form autocomplete="off">
                     <table>
                         <tr class="row1">
@@ -182,98 +183,101 @@
             </div>
 
 
-        
-            <div class="col">
-                <div class="row diceArea">
-                    <form>
-                    <div class="dice col-md-2">
-                    <i class="fas fa-dice-six"></i>
-                    <div><input type="checkbox" id="diceOne" name="diceOne"></div>
+            <div class="col-lg-6">
+                <form>
+                    <div class="diceArea row d-flex justify-content-around">
+                        <div class="dice col-lg-2 col-md-4">
+                            <i class="fas fa-dice-six"></i>
+                            <div><input type="checkbox" id="diceOne" name="diceOne"></div>
+                        </div>
+                        <div class="dice col-lg-2 col-md-4">
+                            <i class="fas fa-dice-six"></i>
+                            <div><input type="checkbox" id="diceTwo" name="diceTwo"></div>
+                        </div>
+                        <div class="dice col-lg-2 col-md-4">
+                            <i class="fas fa-dice-six"></i>
+                            <div><input type="checkbox" id="diceThree" name="diceThree"></div>
+                        </div>
+                        <div class="dice col-lg-2 col-md-4">
+                            <i class="fas fa-dice-six"></i>
+                            <div><input type="checkbox" id="diceFour" name="diceFour"></div>
+                        </div>
+                        <div class="dice col-lg-2 col-md-4">
+                            <i class="fas fa-dice-six"></i>
+                            <div><input type="checkbox" id="diceFive" name="diceFive"></div>
+                        </div>
+
                     </div>
-                    <div class="dice col-md-2">
-                    <i class="fas fa-dice-six"></i>
-                    <div><input type="checkbox" id="diceTwo" name="diceTwo"></div>
-                    </div>    
-                    <div class="dice col-md-2">
-                    <i class="fas fa-dice-six"></i>
-                    <div><input type="checkbox" id="diceThree" name="diceThree"></div>
-                    </div>            
-                    <div class="dice col-md-2">
-                    <i class="fas fa-dice-six"></i>
-                    <div><input type="checkbox" id="diceFour" name="diceFour"></div>
-                    </div>
-                    <div class="dice col-md-2">
-                    <i class="fas fa-dice-six"></i>
-                    <div><input type="checkbox" id="diceFive" name="diceFive"></div>
-                    </form>
-                </div>
-            </div>
-            
-                <!--<div class="row middleArea">
+                </form>
+
+
+                <!-- <div class="row middleArea">
                     <p>Antal kast kvar: 0</p>
                     <button type="button" class="btn btn-info">Slå tärningar</button>
-                    </div>-->
+                    </div> -->
 
-                        <div class="row playerArea">
-                            <div class="col-md-3">
-                                <div class="card player1">
-                                    <div class="card-img">
-                                        <img src="images/prof.png" class="img-fluid">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">NINA</h4>
-                                        <p class="card-text">
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </div>
+                <div class="row playerArea">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card player1">
+                            <div class="card-img">
+                                <img src="images/prof.png" class="img-fluid">
                             </div>
-                            <div class="col-md-3">
-                                <div class="card player2">
-                                    <div class="card-img">
-                                        <img src="images/prof.png" class="img-fluid">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">JOHAN</h4>
-                                        <p class="card-text">
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card player3">
-                                    <div class="card-img">
-                                        <img src="images/prof.png" class="img-fluid">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">WILLIAM</h4>
-                                        <p class="card-text">
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card player4">
-                                    <div class="card-img">
-                                        <img src="images/prof.png" class="img-fluid">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">MICKE</h4>
-                                        <p class="card-text">
-                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="card-body">
+                                <h4 class="card-title">NINA</h4>
+                                <p class="card-text">
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card player2 nowPlaying">
+                            <div class="card-img">
+                                <img src="images/prof.png" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">JOHAN</h4>
+                                <p class="card-text">
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card player3">
+                            <div class="card-img">
+                                <img src="images/prof.png" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">WILLIAM</h4>
+                                <p class="card-text">
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card player4">
+                            <div class="card-img">
+                                <img src="images/prof.png" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">MICKE</h4>
+                                <p class="card-text">
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
             <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-            
+
         </div>
-        </div>
+    </div>
 
 
 

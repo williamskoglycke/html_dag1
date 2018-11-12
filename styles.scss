@@ -2,6 +2,10 @@ $nicecolor: rgb(6, 94, 79);
 $lagompadding: 1.5em;
 $grymmargin: 0.75em;
 
+.container{
+    margin-top:10%;
+}
+
 ol{
     color: $nicecolor;
     padding:$lagompadding;
@@ -24,7 +28,6 @@ h2{
 
 body{
     margin-left: 2em;
-
 
 }
 
