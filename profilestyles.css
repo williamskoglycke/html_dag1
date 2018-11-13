@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.container > div:nth-child(1) {
+  max-width: 300px;
+  margin-right: 30px; }
+
+.statistic {
+  margin-left: 30px;
+  display: flex;
+  align-items: center; }
+
+div {
+  border: 1px solid black; }
+
+ul {
+  color: #065e4f;
+  padding-inline-start: 20px; }
+
+h2, h3 {
+  color: #065e4f; }
+
+#profilepic {
+  max-width: 200px;
+  margin: 20px 0; }
+
+i {
+  padding-left: 30px;
+  padding-top: 50px;
+  font-size: 40px;
+  color: #065e4f;
+  animation: rotate 2s infinite; }
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(360deg); } }

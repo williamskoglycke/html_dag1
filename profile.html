@@ -7,34 +7,35 @@
     <title>Profil</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="profilestyles.css"/>
     <script src="main.js"></script>
 </head>
 
 <body>
-    <p>
-        Användarnamn: JohanJava<br>
+<div class="container">
+    
+<div>
+    
+        <h2>JohanJava</h2>
         <img src="https://www.gamereactor.se/media/forum/se/15294984_18.jpg" id="profilepic">
-        <form>
+        <!-- <form>
             Ändra profilbild:<br>
             <input type="file" name="profilepicture" id="profilepicture" value="Byt profilbild">
-        </form>
-    </p>
-    <p>Hej, jag heter Johan och älskar Yatzy! Jag bor i Stockholm.</p>
-    <p>
-        Användarnamn: JohanJava<br>
-        Namn: Johan<br>
-        Efternamn: Mackegård<br>
-        E-mail: johan@mackegard.se<br>
+        </form> -->
+        <p>Hej, jag heter Johan och älskar Yatzy! Jag bor i Stockholm och arbetar som IT-konsult.</p>
+        <p>
+        <div>Användarnamn: JohanJava</div>
+        <div>Namn: Johan</div>
+        <div>Efternamn: Mackegård</div>
+        <div>E-mail: johan@mackegard.se</div>
+        </p>
+        <div><a href="#">Klicka här</a> för att uppdatera din profil.</div>
 
-        <!-- här borde ett alternativ att uppdatera användaruppgifter ligga-->
+</div>
 
-    </p>
-    
-        <h3>
-            Johans statistik
-        </h3>
+    <div class="statistics">
+        <div>
+        <h3>Statistik för JohanJava</h3>
         <ul>
           <li>
               Antal spelade matcher: 12
@@ -46,8 +47,14 @@
               Max resultat: 300P
           </li>
         </ul>
-        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+    </div>
+    
+</div> <!-- stänger container -->
 
+<div class="arrow">
+    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+    </div>
 
 
 

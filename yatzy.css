@@ -61,7 +61,6 @@ button {
   margin: 0; }
 
 .diceArea {
-  margin: 0;
   padding: 1.5em;
   margin-bottom: 1.5em;
   border: 1px solid black; }
@@ -84,14 +83,15 @@ button {
   100% {
     transform: rotate(360deg); } }
 
-.playerArea {
-  margin: 0; }
-  .playerArea .card-title {
-    color: #065e4f;
-    font-size: 1.2em; }
-  .playerArea .card img {
-    max-width: 50px; }
-  .playerArea .card-body {
-    padding: 1em; }
-  .playerArea .nowPlaying {
-    box-shadow: 0 0 20px #065e4f; }
+.playerArea .card-title {
+  color: #065e4f;
+  font-size: 1.2em; }
+
+.playerArea .card img {
+  max-width: 50px; }
+
+.playerArea .card-body {
+  padding: 1em; }
+
+.playerArea .nowPlaying {
+  box-shadow: 0 0 20px #065e4f; }
