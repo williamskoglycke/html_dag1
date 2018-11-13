@@ -25,6 +25,11 @@ game.players=[player1,player2,player3];
 //     game.players.push(player);
 // }
 
+var calc_button=document.getElementById("calc");
+calc-GamepadButton.addEventListener("click", function(event){
+    
+});
+
 
 function getTotalScore(scores){
     let totalScore=0;
