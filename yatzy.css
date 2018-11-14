@@ -95,3 +95,6 @@ button {
 
 .playerArea .nowPlaying {
   box-shadow: 0 0 20px #065e4f; }
+
+.hideDice {
+  display: none; }

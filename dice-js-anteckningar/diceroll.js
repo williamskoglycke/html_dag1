@@ -1,34 +1,38 @@
 document.addEventListener("DOMContentLoaded", function(event){
 
-
-
-    function getRandomInt(max, min) {
-      return Math.floor(Math.random() * (max - min)) + min;
-    }
-
-
-var b1 = document.getElementById("b1");
-var b2 = document.getElementById("b2");
-var b3 = document.getElementById("b3");
-
-
-// function setTextField(number){
-//     textField.innerHTML=number;
-// }
-
-function updateValue(event){
-    document.getElementById("dice1").innerHTML = getRandomInt(1,6);
-
-    //INNERHTML vid start- och sluttag. value vid element som har ett value!!!!!!!
-
+function getRandomInt(max, min) {
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// b1.addEventListener("click", (event) => setTextField(getRandomInt(1,6)) );
-// b2.addEventListener("click", (event) => setTextField(getRandomInt(1,6)) );
-// b3.addEventListener("click", (event) => setTextField(getRandomInt(1,6)) );
+let randomInt = [0,0,0,0,0];
 
-b1.addEventListener("click", updateValue);
-b2.addEventListener("click", updateValue);
-b3.addEventListener("click", updateValue);
+function rollDices(event){
+    for(let i=1;i<=5;i++){
+        if (!document.getElementById("checkDice"+i).checked)
+            randomInt[i-1]=getRandomInt(1,6);
+            document.getElementById("dice"+i).className=generateClassName(randomInt[i-1]);
+    }
+    console.log(randomInt);
+}
+
+function generateClassName(number){
+    if (number===0)
+        return "hideDice";
+    if (number===1)
+        return "fas fa-dice-one";
+    if (number===2)
+        return "fas fa-dice-two";
+    if (number===3)
+        return "fas fa-dice-three";
+    if (number===4)
+        return "fas fa-dice-four";
+    if (number===5)
+        return "fas fa-dice-five";
+    if (number===6)
+        return "fas fa-dice-six";
+}
+
+var roll = document.getElementById("rollDices");
+roll.addEventListener("click", rollDices);
 
 }); //stänger domcl
