@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     
 function setNowPlaying(playerIndex) {
         diceCounter = 0;
+
         var tempCard =document.getElementsByClassName("card" + playerIndex);
     
         tempCard[0].classList.remove("nowPlaying");
@@ -57,6 +58,13 @@ function setNowPlaying(playerIndex) {
             tempCard[0].classList.add("nowPlaying");
             openPlayerColumn(1);
         }
+        for(let i=0; i<5;i++){
+            document.getElementById("checkDice"+(i+1)).checked=false;
+            document.getElementById("dice" + (i+1)).className = generateClassName(0);
+            randomInt[i]=0;
+        }
+        document.getElementById("diceCount").innerHTML="Total: ";
+
         
     }
 
