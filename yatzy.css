@@ -30,9 +30,8 @@ table, .row1 th, .row8 td, .row9 td, .row19 td {
 .row1 .col1, .row8 .col1, .row9 .col1, .row19 .col1 {
   background-color: #969696; }
 
-th.col3:active, td.col3:active {
-  background-color: #82C9BC;
-  border: 2px solid #065e4f; }
+input[disabled=false] {
+  background-color: steelblue; }
 
 /*
 td.col2:hover, td.col3:hover, td.col4:hover, td.col5:hover, th.col2:hover, th.col3:hover,th.col4:hover,th.col5:hover{
@@ -63,7 +62,9 @@ button {
 .diceArea {
   padding: 1.5em;
   margin-bottom: 1.5em;
-  border: 1px solid black; }
+  border: 1px solid black;
+  display: flex;
+  align-items: center; }
   .diceArea i {
     color: black;
     margin: 0.2em;
@@ -93,8 +94,11 @@ button {
 .playerArea .card-body {
   padding: 1em; }
 
-.playerArea .nowPlaying {
-  box-shadow: 0 0 20px #065e4f; }
-
 .hideDice {
   display: none; }
+
+.nowPlaying {
+  box-shadow: 0 0 20px #065e4f; }
+
+#diceCount {
+  margin-top: 2rem; }

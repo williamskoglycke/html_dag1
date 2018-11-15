@@ -35,10 +35,13 @@ table,.row1 th,.row8 td,.row9 td,.row19 td{
     }
 }
 
-th.col3:active, td.col3:active{
-    background-color: #82C9BC;
-    border: 2px solid rgb(6, 94, 79);
+input[disabled=false]{
+    background-color: steelblue;
 }
+// th.col3:active, td.col3:active{
+//     background-color: #82C9BC;
+//     border: 2px solid rgb(6, 94, 79);
+// }
 
 /*
 td.col2:hover, td.col3:hover, td.col4:hover, td.col5:hover, th.col2:hover, th.col3:hover,th.col4:hover,th.col5:hover{
@@ -76,6 +79,8 @@ button{
     padding:1.5em;
     margin-bottom: 1.5em;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
 
     i {
         color:black;
@@ -115,11 +120,18 @@ button{
     .card-body{
     padding: 1em;
    }
-   .nowPlaying{
-       box-shadow: 0 0 20px rgb(6, 94, 79);
-   }
+   
 }
 
 .hideDice{
     display: none;
+}
+
+.nowPlaying{
+       box-shadow: 0 0 20px rgb(6, 94, 79);
+   }
+
+#diceCount{
+    margin-top:2rem;
+    
 }
