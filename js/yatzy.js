@@ -62,6 +62,7 @@ function setNowPlaying(playerIndex) {
 
 function openPlayerColumn(playerIndex){
 
+        //borde stänga bara i .yatzyTable
         var allInputs = document.getElementsByTagName("input");
         for (let i=0; i<allInputs.length;i++){
             allInputs[i].disabled=true;
@@ -70,6 +71,10 @@ function openPlayerColumn(playerIndex){
         var nowPlayingInput=document.getElementsByClassName("player"+playerIndex);
         for(let i=0; i<nowPlayingInput.length;i++){
             nowPlayingInput[i].disabled=false;
+        }
+        var dices=document.getElementsByClassName("dice");
+        for(let i=0; i<dices.length;i++){
+            dices[i].disabled=false;
         }
 } 
 

@@ -35,7 +35,7 @@ table,.row1 th,.row8 td,.row9 td,.row19 td{
     }
 }
 
-input[disabled=false]{
+input[type="number"]:disabled{
     background-color: steelblue;
 }
 // th.col3:active, td.col3:active{
