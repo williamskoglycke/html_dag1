@@ -2,6 +2,7 @@ var game = {};
 game.gameId = 1;
 game.numPlayers = 4;
 var diceCounter = 0;
+var turnCounter=0;
 
 
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -57,7 +58,9 @@ function setNowPlaying(playerIndex) {
             tempCard=document.getElementsByClassName("card1");
             tempCard[0].classList.add("nowPlaying");
             openPlayerColumn(1);
+            turnCounter++;
         }
+
         for(let i=0; i<5;i++){
             document.getElementById("checkDice"+(i+1)).checked=false;
             document.getElementById("dice" + (i+1)).className = generateClassName(0);
@@ -65,8 +68,26 @@ function setNowPlaying(playerIndex) {
         }
         document.getElementById("diceCount").innerHTML="Total: ";
 
-        
+        if (turnCounter>=15){
+            getWinner();
+        }
+
     }
+
+
+function getWinner(){
+    let winnerscore=document.getElementById("1result").value;
+    let winner="name1"
+
+    for (let i=2;i<=game.numPlayers;i++){
+        if (winnerscore<document.getElementById(i + "result").value){
+            winnerscore=document.getElementById(i + "result").value;
+            winner="name"+i;
+        }
+    }
+
+    alert("Vinnaren är "+document.getElementById(winner).value+" med "+winnerscore+" poäng!");
+}
 
 function openPlayerColumn(playerIndex){
 
@@ -74,12 +95,17 @@ function openPlayerColumn(playerIndex){
         var allInputs = document.getElementsByTagName("input");
         for (let i=0; i<allInputs.length;i++){
             allInputs[i].disabled=true;
+            $(allInputs[i]).parent().removeClass('available');
         }
 
         var nowPlayingInput=document.getElementsByClassName("player"+playerIndex);
         for(let i=0; i<nowPlayingInput.length;i++){
-            nowPlayingInput[i].disabled=false;
+            if(nowPlayingInput[i].value==""){
+                nowPlayingInput[i].disabled=false;
+                $(nowPlayingInput[i]).parent().addClass('available');
+            }
         }
+
         var dices=document.getElementsByClassName("dice");
         for(let i=0; i<dices.length;i++){
             dices[i].disabled=false;
@@ -141,7 +167,7 @@ function openPlayerColumn(playerIndex){
 
     function generateClassName(number) {
         if (number === 0)
-            return "hideDice";
+            return "fas fa-dice-d6";
         if (number === 1)
             return "fas fa-dice-one";
         if (number === 2)

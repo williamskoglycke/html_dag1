@@ -30,14 +30,12 @@ table, .row1 th, .row8 td, .row9 td, .row19 td {
 .row1 .col1, .row8 .col1, .row9 .col1, .row19 .col1 {
   background-color: #969696; }
 
-input[disabled=false] {
-  background-color: steelblue; }
+#bonus1, #bonus2, #bonus3, #bonus4 {
+  background-color: #d2d2d2; }
 
-/*
-td.col2:hover, td.col3:hover, td.col4:hover, td.col5:hover, th.col2:hover, th.col3:hover,th.col4:hover,th.col5:hover{
-    background-color: aquamarine;
-    transition-property: background-color;
-}*/
+td.available {
+  background-color: #9BD4C9; }
+
 input {
   width: 60px;
   border: none;
